@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="features\autowall.cpp" />
+    <ClCompile Include="features\backtrack.cpp" />
+    <ClCompile Include="features\chams.cpp" />
+    <ClCompile Include="features\esp.cpp" />
+    <ClCompile Include="features\misc.cpp" />
+    <ClCompile Include="features\prediction.cpp" />
+    <ClCompile Include="hooks\list_leaves_in_box.cpp" />
+    <ClCompile Include="hooks\draw_model_execute.cpp" />
+    <ClCompile Include="hooks\end_scene.cpp" />
+    <ClCompile Include="hooks\fire_event.cpp" />
+    <ClCompile Include="hooks\frame_stage_notify.cpp" />
+    <ClCompile Include="hooks\get_bool.cpp" />
+    <ClCompile Include="hooks\get_eye_angles.cpp" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="hooks\create_move.cpp" />
+    <ClCompile Include="hooks\lock_cursor.cpp" />
+    <ClCompile Include="hooks\override_view.cpp" />
+    <ClCompile Include="hooks\paint_traverse.cpp" />
+    <ClCompile Include="hooks\reset.cpp" />
+    <ClCompile Include="hooks\scene_end.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu\config.cpp" />
+    <ClCompile Include="menu\menu.cpp" />
+    <ClCompile Include="menu\options.cpp" />
+    <ClCompile Include="ngui\ngui.cc" />
+    <ClCompile Include="renderer\d3d9.cpp" />
+    <ClCompile Include="sdk\netvar.cpp" />
+    <ClCompile Include="sdk\player.cpp" />
+    <ClCompile Include="sdk\sdk.cpp" />
+    <ClCompile Include="sdk\weapon.cpp" />
+    <ClCompile Include="tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="utils\draw.cpp" />
+    <ClCompile Include="utils\texture_handler.cpp" />
+    <ClCompile Include="utils\lodepng\lodepng.cpp" />
+    <ClCompile Include="utils\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="features\autowall.hpp" />
+    <ClInclude Include="features\backtrack.hpp" />
+    <ClInclude Include="features\chams.hpp" />
+    <ClInclude Include="features\esp.hpp" />
+    <ClInclude Include="features\features.hpp" />
+    <ClInclude Include="features\misc.hpp" />
+    <ClInclude Include="features\prediction.hpp" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="hooks\list_leaves_in_box.hpp" />
+    <ClInclude Include="hooks\draw_model_execute.hpp" />
+    <ClInclude Include="hooks\end_scene.hpp" />
+    <ClInclude Include="hooks\fire_event.hpp" />
+    <ClInclude Include="hooks\frame_stage_notify.hpp" />
+    <ClInclude Include="hooks\get_bool.hpp" />
+    <ClInclude Include="hooks\get_eye_angles.hpp" />
+    <ClInclude Include="hooks\hooks.hpp" />
+    <ClInclude Include="hooks\create_move.hpp" />
+    <ClInclude Include="hooks\lock_cursor.hpp" />
+    <ClInclude Include="hooks\override_view.hpp" />
+    <ClInclude Include="hooks\paint_traverse.hpp" />
+    <ClInclude Include="hooks\reset.hpp" />
+    <ClInclude Include="hooks\scene_end.hpp" />
+    <ClInclude Include="menu\config.hpp" />
+    <ClInclude Include="menu\menu.hpp" />
+    <ClInclude Include="menu\options.hpp" />
+    <ClInclude Include="minhook\minhook.h" />
+    <ClInclude Include="ngui\ngui.hh" />
+    <ClInclude Include="renderer\d3d9.hpp" />
+    <ClInclude Include="sdk\angles.hpp" />
+    <ClInclude Include="sdk\bsp.hpp" />
+    <ClInclude Include="sdk\buttons.hpp" />
+    <ClInclude Include="sdk\client.hpp" />
+    <ClInclude Include="sdk\color.hpp" />
+    <ClInclude Include="sdk\cvar.hpp" />
+    <ClInclude Include="sdk\engine.hpp" />
+    <ClInclude Include="sdk\entity.hpp" />
+    <ClInclude Include="sdk\entlist.hpp" />
+    <ClInclude Include="sdk\events.hpp" />
+    <ClInclude Include="sdk\globals.hpp" />
+    <ClInclude Include="sdk\glow.hpp" />
+    <ClInclude Include="sdk\hud_chat.hpp" />
+    <ClInclude Include="sdk\input.hpp" />
+    <ClInclude Include="sdk\input_system.hpp" />
+    <ClInclude Include="sdk\localize.hpp" />
+    <ClInclude Include="sdk\matrix3x4.hpp" />
+    <ClInclude Include="sdk\mat_system.hpp" />
+    <ClInclude Include="sdk\mdl_cache.hpp" />
+    <ClInclude Include="sdk\mdl_info.hpp" />
+    <ClInclude Include="sdk\mdl_render.hpp" />
+    <ClInclude Include="sdk\mem_alloc.hpp" />
+    <ClInclude Include="sdk\netvar.hpp" />
+    <ClInclude Include="sdk\panel.hpp" />
+    <ClInclude Include="sdk\physics.hpp" />
+    <ClInclude Include="sdk\player.hpp" />
+    <ClInclude Include="sdk\prediction.hpp" />
+    <ClInclude Include="sdk\render_view.hpp" />
+    <ClInclude Include="sdk\sdk.hpp" />
+    <ClInclude Include="sdk\surface.hpp" />
+    <ClInclude Include="sdk\trace.hpp" />
+    <ClInclude Include="sdk\ucmd.hpp" />
+    <ClInclude Include="sdk\vec3.hpp" />
+    <ClInclude Include="sdk\weapon.hpp" />
+    <ClInclude Include="tinyxml2\tinyxml2.h" />
+    <ClInclude Include="utils\draw.hpp" />
+    <ClInclude Include="utils\event_handler.hpp" />
+    <ClInclude Include="utils\fnv1a.hpp" />
+    <ClInclude Include="utils\lazy_importer.hpp" />
+    <ClInclude Include="utils\nlohmann\adl_serializer.hpp" />
+    <ClInclude Include="utils\nlohmann\byte_container_with_subtype.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\conversions\from_json.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\conversions\to_chars.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\conversions\to_json.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\exceptions.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\hash.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\input\binary_reader.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\input\input_adapters.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\input\json_sax.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\input\lexer.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\input\parser.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\input\position_t.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\iterators\internal_iterator.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\iterators\iteration_proxy.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\iterators\iterator_traits.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\iterators\iter_impl.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\iterators\json_reverse_iterator.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\iterators\primitive_iterator.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\json_pointer.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\json_ref.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\macro_scope.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\macro_unscope.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\meta\cpp_future.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\meta\detected.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\meta\is_sax.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\meta\type_traits.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\meta\void_t.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\output\binary_writer.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\output\output_adapters.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\output\serializer.hpp" />
+    <ClInclude Include="utils\nlohmann\detail\value_t.hpp" />
+    <ClInclude Include="utils\nlohmann\json.hpp" />
+    <ClInclude Include="utils\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="utils\nlohmann\ordered_map.hpp" />
+    <ClInclude Include="utils\nlohmann\thirdparty\hedley\hedley.hpp" />
+    <ClInclude Include="utils\nlohmann\thirdparty\hedley\hedley_undef.hpp" />
+    <ClInclude Include="utils\texture_handler.hpp" />
+    <ClInclude Include="utils\lodepng\lodepng.h" />
+    <ClInclude Include="utils\padding.hpp" />
+    <ClInclude Include="utils\patternscanner.hpp" />
+    <ClInclude Include="utils\registers.hpp" />
+    <ClInclude Include="utils\utils.hpp" />
+    <ClInclude Include="utils\vfunc.hpp" />
+    <ClInclude Include="utils\xor.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{F9CBFBFA-2801-4150-84E2-660CF4BC610A}</ProjectGuid>
+    <RootNamespace>csgo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>csgo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>minhook;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;minhook;$(LibraryPath)</LibraryPath>
+    <TargetName>hack</TargetName>
+    <OutDir>..\output\release\</OutDir>
+    <IntDir>..\intermediates\release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>hack</TargetName>
+    <OutDir>..\output\debug\</OutDir>
+    <IntDir>..\intermediates\debug\</IntDir>
+    <IncludePath>minhook;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>minhook;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;OXUI_WIDESTR;OXUI_THEME_PURPLE_HPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996;4227;4018;4099;4244</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>minhook/minhook.lib;d3dx9.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
